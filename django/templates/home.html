@@ -1,0 +1,37 @@
+{% extends 'bootstrap_styling.html' %}
+
+{% block j_heading %}
+The Everything Machine
+{% endblock %}
+
+{% block j_text %}
+Use our APIs and see our demos to perform everything ranging from text analysis to computer vision to numerical data analysis.
+{% endblock %}
+
+{% block modalbutton %} What is The Everything Machine? {% endblock %}
+
+{% block modaltitle %} The Everything Machine {% endblock %}
+
+{% block modalbody %}
+We are a group of highly driven individuals working on NLP, CV and Recommendation systems.
+{% endblock %}
+
+{% block cards %}
+
+    <div class="row">
+        <a href="{% url 'text:text' %}" class="card">
+          <div>
+            <img src="">
+            <p class="card-text">Click here for numerical models</p>
+          </div>
+        </a>
+
+        <a href="{% url 'text:text' %}" class="card">
+          <div>
+            <img src="">
+            <p class="card-text">Click here for NLP models.</p>
+          </div>
+        </a>
+        </div>
+
+{% endblock %}

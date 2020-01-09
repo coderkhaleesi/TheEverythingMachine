@@ -1,0 +1,30 @@
+{% extends 'bootstrap_styling.html' %}
+
+{% block j_heading %}
+Numerical Models
+{% endblock %}
+
+{% block j_text %}
+Click to see demos ranging from housing prices prediction to cancer detection etc.
+Play with numbers here to your heart's content.
+{% endblock %}
+
+{% block modalbutton %} What are numerical models for?{% endblock %}
+
+{% block modaltitle %} Numerical models {% endblock %}
+
+{% block modalbody %}
+These models are used to make sense of numbers and find patterns in the same. Humans, whereas intuitive with tasks like image recognition and speech recognition, are not very good at finding patterns in numbers. We take advantage of Machine Learning counterparts here.
+{% endblock %}
+
+{% block cards %}
+    <div class="row">
+        <a href="{% url 'text:housingdata' %}" class="card">
+          <div>
+            <img src="">
+            <p class="card-text">Click here for housing data model</p>
+          </div>
+        </a>
+
+
+{% endblock %}

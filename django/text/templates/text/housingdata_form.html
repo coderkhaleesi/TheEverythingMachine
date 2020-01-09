@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block heading %}
+<h1>Housing Data Regression Model</h1>
+{% endblock %}
+
+{% block text %}
+<p>Enter the numbers and see what's is the price of the property you are looking for. Please enter integers.</p>
+{% endblock %}
+
+{% block form %}
+
+<form action ="/text/sendhousingdata" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+<input type="submit" value="Submit" class="btn btn-success">
+</form>
+
+
+{% endblock %}
